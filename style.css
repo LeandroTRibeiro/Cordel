@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+:root {
+    --cor1: rgb(89, 17, 17, 35);/*#591111*/
+    --cor2: rgb(166, 107, 55, 65);/*#A66B37*/
+    --cor3: rgb(104, 176, 171, 69);/*#68B0AB*/
+    --cor4: rgb(231, 214, 136, 91);/*#e7e4ab*/
+    --cor5: rgb(243, 255, 200, 100);/*#f3ffc8*/
+    --cor6:black;
+    --cor7:white;
+}
+
+@font-face {
+    font-family: 'patricia';
+    src: url('fonts/Patricia\ Signature.otf') format('opentype'), url('fonts/Patricia\ Signature.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'josefi';
+    src: url('fonts/JosefinSlab-Regular.ttf') format('truetype');
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    height: 100vh;
+    background: var(--cor5);
+}
+
+header {
+    background: var(--cor4);
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.411);
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+h1 {
+    font-family: 'patricia', Georgia, 'Times New Roman', Times, serif;
+    color: var(--cor6);
+    text-align: center;
+    margin-bottom: 0px;
+    font-size: 3em;
+}
+header > p {
+    text-align: center;
+    margin-top: -15px;
+    font-size: 0.9em;
+}
+header > p > a {
+    font-family: 'josefi', serif;
+    text-align: center;
+    text-decoration: none;
+    color: var(--cor6);
+}
+header > p > a:hover {
+    color: var(--cor1);
+    font-weight: bold;
+}
+main > section > p {
+    margin-bottom: 2em;
+}
+main > section.normal {
+    background: var(--cor5);
+    color: var(--cor6);
+    box-shadow: inset 1px 1px 5px black;
+}
+main > section.imagem {
+    background: var(--cor1);
+    color: var(--cor4);
+    text-shadow: 0px 0px 5px black;
+}
+#img1 {
+    background: #A66B37 url('imagens/back01.jpg') center right no-repeat fixed;
+    background-size: cover;
+}
+#img2 {
+    background: #A66B37 url('imagens/back02.jpg') center right no-repeat fixed;
+    background-size: cover;
+}
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 10vh;
+}
+section.imagem > p {
+    background: #a66b3794;
+    width: 300px;
+    padding-left: 20px;
+    border-radius: 10px;
+}
+footer > div > p {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    font-size: 0.8em;
+    padding: 10px;
+}
+footer > div > p > a {
+    text-decoration: none;
+    color: black;
+}
+div {
+    background-color: var(--cor2);
+    
+}
+
+div:hover #hover {
+    background-color: var(--cor1);
+    padding: 10px;
+}
+
+
